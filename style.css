@@ -1,0 +1,103 @@
+*{
+    margin: 0; padding: 0;
+}
+
+nav {
+    background-color: #242526;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    border-bottom: 3px solid #f9352e;
+}
+
+.leftnavbar img {
+    width: 110px;
+}
+
+nav .middlenavbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+nav .middlenavbar ul li {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.middlenavbar ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.middlenavbar ul li a:hover {
+    color: #e0e1e6;
+}
+
+.middlenavbar ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    background-color: #f9352e;
+    height: 3px;
+    bottom: 0;
+    transition:  0.2s;
+}
+
+.middlenavbar ul li a:hover::before{
+    width: 100%;
+}
+
+.rightnavbar {
+    background-color: #4e4f50;
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.rightnavbar i {
+    font-size: 25px;
+    color: #e0e1e6;
+    transition: 0.2s;
+}
+
+.rightnavbar:hover i {
+    color: #f9352e;
+}
+
+.rightnavbar input {
+    width: 260px;
+    height: 36px;
+    border: 2px solid #4e4f50;
+    border-radius: 20px;
+    outline: none;
+    font-size: 21px;
+    color: #4e4f50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.rightnavbar input::placeholder{
+    color: #4e4f50;
+    font-size: 20px;
+    padding: auto 10px;
+    text-align: center;
+}
